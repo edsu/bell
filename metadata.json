@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "url": "http://memory.loc.gov/ammem/bellhtml/bellhome.html", 
+      "items": [], 
+      "title": "The Alexander Graham Bell Family Papers at the Library of Congress"
+    }, 
+    {
+      "url": "http://memory.loc.gov/ammem/bellhtml/magbellFolder1.html", 
+      "items": [
+        {
+          "url": "http://memory.loc.gov/cgi-bin/query/S?ammem/magbell:@field(DOCID+@range(magbell00300100+magbell00300199))", 
+          "items": [
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:1:./temp/~ammem_H7XF::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/003/00300105/0001i.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300105/0002i.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300105/0003i.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300105/0004i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/003/00300105/00300105.xml", 
+              "title": "Letter from Alexander Melville Bell to Alexander Graham Bell, February 14, 1866"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:2:./temp/~ammem_H7XF::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/003/00300102/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300102/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300102/0003.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300102/0004i.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300102/0005i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/003/00300102/00300102.xml", 
+              "title": "Letter from Alexander Melville Bell to Alexander Graham Bell, March 2, 1863"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:3:./temp/~ammem_H7XF::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/003/00300103/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300103/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300103/0003i.jpg", 
+                "http://memory.loc.gov/mss/magbell/003/00300103/0004i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/003/00300103/00300103.xml", 
+              "title": "Letter from Alexander Melville Bell to Alexander Graham Bell, March 2, 1864"
+            }
+          ], 
+          "title": "Alexander Melville Bell, Family Correspondence, Alexander Graham Bell, 1862-1866"
+        }, 
+        {
+          "url": "http://memory.loc.gov/cgi-bin/query/S?ammem/magbell:@field(DOCID+@range(magbell00400100+magbell00400199))", 
+          "items": [
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:1:./temp/~ammem_f8HC::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400120/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0003.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0004.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0005.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0006.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0007.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0008.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0009i.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0010i.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0011i.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0012i.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400120/0013i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/004/00400120/00400120.xml", 
+              "title": "Letter from Alexander Graham Bell to Alexander Melville Bell, Eliza Symonds Bell, Carrie Bell, June 19, 1870"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:2:./temp/~ammem_f8HC::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400115/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400115/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400115/0003i.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400115/0004i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/004/00400115/00400115.xml", 
+              "title": "Letter from Alexander Graham Bell to Alexander Melville Bell, Eliza Symonds Bell, Carrie Bell, June 2, 1870"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:3:./temp/~ammem_f8HC::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400117/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400117/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400117/0003.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400117/0004.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400117/0005i.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400117/0006i.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400117/0007i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/004/00400117/00400117.xml", 
+              "title": "Letter from Alexander Graham Bell to Alexander Melville Bell, Eliza Symonds Bell, Carrie Bell, June 5, 1870"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:21:./temp/~ammem_f8HC::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400110/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400110/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400110/0003i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/004/00400110/00400110.xml", 
+              "title": "Letter from Alexander Melville Bell, January 4, 1870"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:22:./temp/~ammem_f8HC::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400112/0001.jpg"
+              ], 
+              "transcription": null, 
+              "title": "Telegram from Alexander Graham Bell to Alexander Melville Bell, May 25, 1870"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:23:./temp/~ammem_f8HC::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400113/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400113/0002i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/004/00400113/00400113.xml", 
+              "title": "Telegram from Alexander Graham Bell to Alexander Melville Bell, May 28, 1870"
+            }
+          ], 
+          "title": "Alexander Melville Bell, Family Correspondence, Alexander Graham Bell, 1867-1870"
+        }, 
+        {
+          "url": "http://memory.loc.gov/cgi-bin/query/S?ammem/magbell:@field(DOCID+@range(magbell00400200+magbell00400299))", 
+          "items": [
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:1:./temp/~ammem_x1Jg::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400207/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400207/0002.jpg"
+              ], 
+              "transcription": null, 
+              "title": "Envelope from Alexander Graham Bell to Alexander Melville Bell, April 10, 1871"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:2:./temp/~ammem_x1Jg::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400217/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400217/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400217/0003i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/004/00400217/00400217.xml", 
+              "title": "Letter from Alexander Graham Bell to Alexander Melville Bell, 1871"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:3:./temp/~ammem_x1Jg::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400201/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400201/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400201/0003i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/004/00400201/00400201.xml", 
+              "title": "Letter from Alexander Graham Bell to Alexander Melville Bell, 1871"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:21:./temp/~ammem_x1Jg::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/004/00400221/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/004/00400221/0002.jpg"
+              ], 
+              "transcription": null, 
+              "title": "Letter from Alexander Melville Bell to Alexander Graham Bell, undated"
+            }
+          ], 
+          "title": "Alexander Melville Bell, Family Correspondence, Alexander Graham Bell, 1871"
+        }
+      ], 
+      "title": "Family Papers"
+    }, 
+    {
+      "url": "http://memory.loc.gov/ammem/bellhtml/magbellFolder2.html", 
+      "items": [
+        {
+          "url": "http://memory.loc.gov/cgi-bin/query/S?ammem/magbell:@field(DOCID+@range(magbell12000100+magbell12000199))", 
+          "items": [
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:1:./temp/~ammem_wGHn::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/120/12000103/0001i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/120/12000103/12000103.xml", 
+              "title": "Clipping, 1908"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:2:./temp/~ammem_wGHn::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/120/12000114/0001i.jpg", 
+                "http://memory.loc.gov/mss/magbell/120/12000114/0002i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/120/12000114/12000114.xml", 
+              "title": "Letter from Alexander Graham Bell to Frederick W. Baldwin, December 24, 1917"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:3:./temp/~ammem_wGHn::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/120/12000108/0001i.jpg", 
+                "http://memory.loc.gov/mss/magbell/120/12000108/0002i.jpg", 
+                "http://memory.loc.gov/mss/magbell/120/12000108/0003i.jpg", 
+                "http://memory.loc.gov/mss/magbell/120/12000108/0004i.jpg"
+              ], 
+              "transcription": "http://memory.loc.gov/mss/magbell/120/12000108/12000108.xml", 
+              "title": "Letter from Alexander Graham Bell to Frederick W. Baldwin, March 12, 1917"
+            }
+          ], 
+          "title": "Frederick W. Baldwin, 1906-1917"
+        }, 
+        {
+          "url": "http://memory.loc.gov/cgi-bin/query/S?ammem/magbell:@field(DOCID+@range(magbell12100200+magbell12100299))", 
+          "items": [
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:1:./temp/~ammem_lOkD::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/121/12100201/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100201/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100201/0003.jpg"
+              ], 
+              "transcription": null, 
+              "title": "Letter from Adam Scott to Alexander Graham Bell, December 15, 1877"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:2:./temp/~ammem_lOkD::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/121/12100204/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100204/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100204/0003.jpg"
+              ], 
+              "transcription": null, 
+              "title": "Letter from Thomas Biddulph to Alexander Graham Bell, January 16, 1878"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:3:./temp/~ammem_lOkD::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/121/12100203/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100203/0002.jpg"
+              ], 
+              "transcription": null, 
+              "title": "Letter from Thomas Biddulph to Alexander Graham Bell, January 8, 1878"
+            }
+          ], 
+          "title": "Thomas Biddulph, 1877-1878"
+        }, 
+        {
+          "url": "http://memory.loc.gov/cgi-bin/query/S?ammem/magbell:@field(DOCID+@range(magbell12100300+magbell12100399))", 
+          "items": [
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:1:./temp/~ammem_dbRi::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/121/12100312/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100312/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100312/0003.jpg"
+              ], 
+              "transcription": null, 
+              "title": "Letter from Clarence J. Blake to Alexander Graham Bell, December 28, 1879"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:2:./temp/~ammem_dbRi::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/121/12100316/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100316/0002.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100316/0003.jpg"
+              ], 
+              "transcription": null, 
+              "title": "Letter from Clarence J. Blake to Alexander Graham Bell, February 1, 1882"
+            }, 
+            {
+              "url": "http://memory.loc.gov/cgi-bin/query/P?magbell:3:./temp/~ammem_dbRi::", 
+              "images": [
+                "http://memory.loc.gov/mss/magbell/121/12100302/0001.jpg", 
+                "http://memory.loc.gov/mss/magbell/121/12100302/0002.jpg"
+              ], 
+              "transcription": null, 
+              "title": "Letter from Clarence J. Blake to Alexander Graham Bell, February 14, 1879"
+            }
+          ], 
+          "title": "Clarence J. Blake, 1877-1882"
+        }
+      ], 
+      "title": "General Correspondence"
+    }
+  ], 
+  "title": "Alexander Graham Bell Family Papers"
+}
