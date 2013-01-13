@@ -76,9 +76,23 @@ def transcription(img_url):
         return url
     return None
 
-def scrape(skip_until=None):
+def get_last_item():
+    if os.path.isfile("metadata.json"):
+        for line in open("metadata.json"):
+            last = line
+        return json.loads(last)
+
+def scrape(resume=False):
     metadata = open("metadata.json", "a")
+
+    # if there is a metadata file get the last item pulled down to see
+    # if we can resume
+    last_item = get_last_item()
+    found_last_item = False
+
     for series_text, series_url in series_urls():
+        if resume and not found_last_item and series_text != last_item["series"]:
+            continue
         for subseries_text, subseries_url in cgi_urls(series_url):
             for item_text, item_url in cgi_urls(subseries_url):
                 item = {
@@ -97,3 +111,5 @@ def scrape(skip_until=None):
                 metadata.write(json.dumps(item))
                 metadata.write("\n")
 
+if __name__ == "__main__":
+    print last_item()
