@@ -3,13 +3,13 @@
 import os
 import json
 import time
-import lxml.html
+import logging
 import requests
 import urlparse
+import lxml.html
 
 seen = {}
 def load_html(url):
-    print "loading", url
     if url in seen:
         print "already seen %s %s times" % (url, seen[url])
     seen[url] = seen.get(url, 0) + 1
@@ -75,22 +75,25 @@ def transcription(img_url):
         print url
         return url
     return None
- 
-collection = {"title": "Alexander Graham Bell Family Papers", "items": []}
-for series_text, series_url in series_urls():
-    series = {"title": series_text, "url": series_url, "items": []}
-    for subseries_text, subseries_url in cgi_urls(series_url):
-        subseries = {"title": subseries_text, "url": subseries_url, "items": []}
-        for item_text, item_url in cgi_urls(subseries_url):
-            item = {"title": item_text, "url": item_url, "images": []}
-            for img_url in img_urls(item_url):
-                print img_url
-                item["images"].append(img_url)
-            if len(item["images"]) == 0:
-                print "no images", item_url
-            item["transcription"] = transcription(item["images"][0])
-            subseries["items"].append(item)
-        series["items"].append(subseries)
-    collection["items"].append(series)
 
-open("metadata.json", "w").write(json.dumps(collection, indent=2))
+def scrape(skip_until=None):
+    metadata = open("metadata.json", "a")
+    for series_text, series_url in series_urls():
+        for subseries_text, subseries_url in cgi_urls(series_url):
+            for item_text, item_url in cgi_urls(subseries_url):
+                item = {
+                    "series": series_text,
+                    "subseries": subseries_text,
+                    "title": item_text, 
+                    "url": item_url, 
+                    "images": []
+                }
+                for img_url in img_urls(item_url):
+                    print img_url
+                    item["images"].append(img_url)
+                if len(item["images"]) == 0:
+                    print "no images", item_url
+                item["transcription"] = transcription(item["images"][0])
+                metadata.write(json.dumps(item))
+                metadata.write("\n")
+
