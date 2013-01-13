@@ -8,10 +8,12 @@ import requests
 import urlparse
 import lxml.html
 
+logging.basicConfig(filename="scrape.log", level=logging.INFO)
+
 seen = {}
 def load_html(url):
     if url in seen:
-        print "already seen %s %s times" % (url, seen[url])
+        logging.warn("already seen %s %s times", url, seen[url])
     seen[url] = seen.get(url, 0) + 1
     time.sleep(1)
     return lxml.html.fromstring(requests.get(url).content)
@@ -30,7 +32,6 @@ def series_urls():
 def cgi_urls(url):
     doc = load_html(url)
     next_url = None
-    count = 0
     for a in doc.xpath(".//a"):
         link_text = a.text_content()
         link_url = urlparse.urljoin(url, a.attrib["href"])
@@ -40,10 +41,7 @@ def cgi_urls(url):
             elif link_text == "NEXT PAGE":
                 next_url = link_url
             else:
-                count += 1
                 yield link_text, link_url
-            if count > 2:
-                pass #break
     if next_url:
         for t, u in cgi_urls(next_url):
             yield t, u
@@ -67,12 +65,14 @@ def img_urls(url):
         for u in img_urls(next_url):
             yield u
 
-def transcription(img_url):
+def get_transcription(item):
+    if len(item["images"]) == 0:
+        return None
     item_dir = os.path.dirname(item["images"][0])
     item_id = os.path.basename(item_dir)
     url = item_dir + "/" + item_id + ".xml"
     if requests.head(url).status_code == 200:
-        print url
+        logging.info("got transcription %s", url)
         return url
     return None
 
@@ -88,13 +88,22 @@ def scrape(resume=False):
     # if there is a metadata file get the last item pulled down to see
     # if we can resume
     last_item = get_last_item()
-    found_last_item = False
 
     for series_text, series_url in series_urls():
-        if resume and not found_last_item and series_text != last_item["series"]:
+        if resume and series_text != last_item["series"]:
+            logging.info("skipping series %s", series_text)
             continue
         for subseries_text, subseries_url in cgi_urls(series_url):
+            if resume and subseries_text != last_item["subseries"]:
+                logging.info("skipping subseries %s", subseries_text)
+                continue
             for item_text, item_url in cgi_urls(subseries_url):
+                if resume and item_text != last_item["title"]:
+                    logging.info("skipping item %s", item_text)
+                    continue
+                elif resume:
+                    resume = False
+                    continue
                 item = {
                     "series": series_text,
                     "subseries": subseries_text,
@@ -103,13 +112,13 @@ def scrape(resume=False):
                     "images": []
                 }
                 for img_url in img_urls(item_url):
-                    print img_url
+                    logging.info("got image %s", img_url)
                     item["images"].append(img_url)
                 if len(item["images"]) == 0:
-                    print "no images", item_url
-                item["transcription"] = transcription(item["images"][0])
+                    logging.warn("no images found for %s", item_url)
+                item["transcription"] = get_transcription(item)
                 metadata.write(json.dumps(item))
                 metadata.write("\n")
 
 if __name__ == "__main__":
-    print last_item()
+    scrape(resume=True)
