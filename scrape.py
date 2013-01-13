@@ -21,13 +21,9 @@ def load_html(url):
 def series_urls():
     url = "http://memory.loc.gov/ammem/bellhtml/magbellSeries.html"
     doc = load_html(url)
-    count = 1
     for a in doc.xpath(".//a"):
         if "bellhtml/" in a.attrib["href"]:
-            count += 1
             yield a.text_content(), urlparse.urljoin(url, a.attrib["href"])
-            if count > 2:
-                pass #break
 
 def cgi_urls(url):
     doc = load_html(url)
